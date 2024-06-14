@@ -35,8 +35,7 @@ class RestaurantCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      restaurant.displayCategory,
-                    ),
+                        '${restaurant.price ?? ''} ${restaurant.displayCategory}'),
                     const SizedBox(height: 16),
                     const Spacer(),
                     Row(
