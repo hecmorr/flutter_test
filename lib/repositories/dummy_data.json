@@ -1,0 +1,218 @@
+{
+  "total": 5,
+  "business": [
+    {
+      "id": "1",
+      "name": "Restaurant A",
+      "price": "$$",
+      "rating": 4.5,
+      "photos": [
+        "https://images.unsplash.com/photo-1543352633-1369f12135b4",
+        "https://images.unsplash.com/photo-1559339352-11d3d88f0fa3"
+      ],
+      "categories": [
+        {
+          "alias": "italian",
+          "title": "Italian"
+        },
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        }
+      ],
+      "hours": [
+        {
+          "is_open_now": true
+        }
+      ],
+      "reviews": [
+        {
+          "id": "101",
+          "rating": 5,
+          "user": {
+            "id": "u1",
+            "image_url": "https://images.unsplash.com/photo-1603415526960-fb31f4d9b62b",
+            "name": "John Doe"
+          }
+        },
+        {
+          "id": "102",
+          "rating": 4,
+          "user": {
+            "id": "u2",
+            "image_url": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
+            "name": "Jane Smith"
+          }
+        }
+      ],
+      "location": {
+        "formatted_address": "123 Main St, City, Country"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Restaurant B",
+      "price": "$",
+      "rating": 3.8,
+      "photos": [
+        "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38",
+        "https://images.unsplash.com/photo-1551218808-94e220e084d2"
+      ],
+      "categories": [
+        {
+          "alias": "japanese",
+          "title": "Japanese"
+        },
+        {
+          "alias": "sushi",
+          "title": "Sushi"
+        }
+      ],
+      "hours": [
+        {
+          "is_open_now": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": "103",
+          "rating": 3,
+          "user": {
+            "id": "u3",
+            "image_url": "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+            "name": "Alice Johnson"
+          }
+        }
+      ],
+      "location": {
+        "formatted_address": "456 Elm St, City, Country"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Restaurant C",
+      "price": "$$$",
+      "rating": 4.7,
+      "photos": [
+        "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+        "https://images.unsplash.com/photo-1533777324565-a040eb52fac1"
+      ],
+      "categories": [
+        {
+          "alias": "french",
+          "title": "French"
+        },
+        {
+          "alias": "wine_bars",
+          "title": "Wine Bars"
+        }
+      ],
+      "hours": [
+        {
+          "is_open_now": true
+        }
+      ],
+      "reviews": [
+        {
+          "id": "104",
+          "rating": 5,
+          "user": {
+            "id": "u4",
+            "image_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+            "name": "Bob Brown"
+          }
+        },
+        {
+          "id": "105",
+          "rating": 4,
+          "user": {
+            "id": "u5",
+            "image_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+            "name": "Cathy Green"
+          }
+        }
+      ],
+      "location": {
+        "formatted_address": "789 Maple Ave, City, Country"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Restaurant D",
+      "price": "$$",
+      "rating": 4.2,
+      "photos": [
+        "https://images.unsplash.com/photo-1555939594-58d7cb561ad1",
+        "https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+      ],
+      "categories": [
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        },
+        {
+          "alias": "tacos",
+          "title": "Tacos"
+        }
+      ],
+      "hours": [
+        {
+          "is_open_now": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": "106",
+          "rating": 5,
+          "user": {
+            "id": "u6",
+            "image_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+            "name": "David Blue"
+          }
+        }
+      ],
+      "location": {
+        "formatted_address": "321 Oak St, City, Country"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Restaurant E",
+      "price": "$",
+      "rating": 3.5,
+      "photos": [
+        "https://images.unsplash.com/photo-1528605248644-14dd04022da1",
+        "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
+      ],
+      "categories": [
+        {
+          "alias": "indian",
+          "title": "Indian"
+        },
+        {
+          "alias": "vegetarian",
+          "title": "Vegetarian"
+        }
+      ],
+      "hours": [
+        {
+          "is_open_now": true
+        }
+      ],
+      "reviews": [
+        {
+          "id": "107",
+          "rating": 3,
+          "user": {
+            "id": "u7",
+            "image_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+            "name": "Eve Yellow"
+          }
+        }
+      ],
+      "location": {
+        "formatted_address": "654 Pine St, City, Country"
+      }
+    }
+  ]
+}

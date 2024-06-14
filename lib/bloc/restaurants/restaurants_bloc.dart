@@ -11,6 +11,8 @@ class RestaurantsBloc extends Bloc<RestaurantsEvent, RestaurantsState> {
   RestaurantsBloc() : super(RestaurantsInitial()) {
     on<RestaurantsRequested>((event, emit) async {
       try {
+        // final result = await yelpRepo.readJsonFile(
+        //     '/Users/hectormorales/Flutter-repos/superformula/restauranttour/lib/repositories/dummy_data.json');
         final result = await yelpRepo.getRestaurants();
         if (result != null) {
           emit(RestaurantSuccess(restaurants: result.restaurants!));

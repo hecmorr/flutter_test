@@ -1,3 +1,6 @@
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:restaurantour/models/restaurant.dart';
@@ -105,5 +108,22 @@ query getRestaurants {
   }
 }
 ''';
+  }
+
+  Future<RestaurantQueryResult> readJsonFile(String filePath) async {
+    try {
+      // Read the file
+      final file = File(filePath);
+      String contents = await file.readAsString();
+
+      // Decode the JSON contents into a Map
+      final jsonMap = json.decode(contents);
+
+      // Convert the Map to a RestaurantQueryResult object
+      return RestaurantQueryResult.fromJson(jsonMap);
+    } catch (e) {
+      print('Error reading JSON file: $e');
+      rethrow;
+    }
   }
 }

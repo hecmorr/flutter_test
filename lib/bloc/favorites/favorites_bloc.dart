@@ -10,9 +10,19 @@ part 'favorites_state.dart';
 
 class FavoritesBloc extends HydratedBloc<FavoritesEvent, FavoritesState> {
   FavoritesBloc() : super(const FavoritesState()) {
-    on<FavoritesNewAdded>((event, emit) {
+    on<FavoritesNewAdded>
+        // (_onFavoriteNewsAdded);
+        // on<FavoritesNewAdded>(_onFavoriteNewsRemoved);
+        ((event, emit) {
       final restaurant = event.restaurant;
-      emit(FavoritesState(restaurants: [...state.restaurants, restaurant]));
+      final index = state.restaurants.indexOf(restaurant);
+      final restaurants = [...state.restaurants];
+      if (index < 0) {
+        restaurants.add(restaurant);
+      } else {
+        restaurants.removeAt(index);
+      }
+      emit(FavoritesState(restaurants: restaurants));
     });
   }
 
